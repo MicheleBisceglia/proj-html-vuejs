@@ -1,7 +1,6 @@
 <template>
   <div>
     <footer>
-      <h1>ciao</h1>
     </footer>
   </div>
 </template>
@@ -16,5 +15,6 @@ export default {
 @import "../style/common.scss";
 footer {
   height: 100px;
+  background-color: $secondary-color;
 }
 </style>

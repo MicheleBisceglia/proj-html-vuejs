@@ -13,7 +13,7 @@ export default {
 <style scoped lang="scss">
 @import "../style/common.scss";
 main {
-  background-color: red;
-  height: 10000px;
+  background-color: pink;
+  height: 700px;
 }
 </style>
