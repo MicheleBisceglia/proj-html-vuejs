@@ -14,6 +14,6 @@ export default {
 @import "../style/common.scss";
 main {
   background-color: red;
-  height: 400px;
+  height: 10000px;
 }
 </style>
