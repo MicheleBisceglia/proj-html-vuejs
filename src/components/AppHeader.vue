@@ -55,12 +55,12 @@ export default {
 .header_top {
   height: 60px;
   background-color: $primary-color;
-  border-bottom: 1px solid #f3f4f3;
+  border-bottom: 1px solid $light-color;
   display: flex;
   justify-content: center;
   align-items: center;
   .header_top_item {
-    width: 20%;
+    min-width: 20%;
     height: 70%;
     display: flex;
     justify-content: center;
@@ -70,7 +70,7 @@ export default {
       width: 90%;
   }
   input {
-      background-color: #f3f4f3;
+      background-color: $light-color;
       border-style: none;
       border-radius: 20px;
       height: 30px;
@@ -83,7 +83,7 @@ export default {
   }
   .contacts {
     font-size: 90%;
-    background-color: #f3f4f3;
+    background-color: $light-color;
     display: flex;
     border-radius: 20px;
     height: 30px;
