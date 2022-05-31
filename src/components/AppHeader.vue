@@ -6,7 +6,7 @@
           <img src="../assets/img/dark-pet-logo.png" alt="">
         </div>
         <div class="header_top_item">
-          <input type="text" placeholder="search">
+          <input @keyup="$emit('searchClick', searchKey)" type="text" placeholder="search" v-model="searchKey">
         </div>
         <div class="header_top_item contacts">
           <strong>Questions? </strong>
@@ -47,6 +47,11 @@
 <script>
 export default {
   name: "AppHeader",
+  data() {
+    return {
+      searchKey: ""
+    }
+  }
 };
 </script>
 

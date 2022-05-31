@@ -1,15 +1,18 @@
 <template>
   <div class="product-card">
-    <div class="img"></div>
-    <h4 class="center">Dog leash</h4>
-    <p class="center">April 29th, 2020 | Transport</p>
+    <img class="img" :src="require(`../assets/img/product-${productObj.image}-600x600.jpg`)" alt="">
+    <h4 class="center">{{ productObj.name }}</h4>
+    <p class="center">{{ productObj.produced }}</p>
   </div>
 </template>
 
 <script>
 export default {
+  props: {
+    productObj: Object
+  },
   name: "AppProduct"
-}
+  }
 </script>
 
 <style lang="scss" scoped>

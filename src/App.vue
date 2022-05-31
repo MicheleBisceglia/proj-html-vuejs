@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <AppHeader />
+    <AppHeader @searchClick="search"/>
     <AppMain />
     <AppFooter />
   </div>
@@ -17,7 +17,12 @@ export default {
     AppMain,
     AppFooter,
   },
-};
+  methods: {
+    search(searchKey) {
+      console.log(searchKey);
+    }
+  }
+}
 </script>
 
 <style lang="scss">
