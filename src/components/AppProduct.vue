@@ -1,5 +1,6 @@
 <template>
-  <div class="product-card">
+  <div 
+    class="product-card">
     <img class="img" :src="require(`../assets/img/product-${productObj.image}-600x600.jpg`)" alt="">
     <h4 class="center">{{ productObj.name }}</h4>
     <p class="center">{{ productObj.produced }}</p>

@@ -6,7 +6,12 @@
           <img src="../assets/img/dark-pet-logo.png" alt="">
         </div>
         <div class="header_top_item">
-          <input @keyup="$emit('searchClick', searchKey)" type="text" placeholder="search" v-model="searchKey">
+          <input 
+          @keyup="$emit('searchClick', searchKey)" 
+          type="text" placeholder="search" 
+          v-model="searchKey"
+          :searchObj="searchKey"
+          >
         </div>
         <div class="header_top_item contacts">
           <strong>Questions? </strong>

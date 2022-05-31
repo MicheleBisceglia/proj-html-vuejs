@@ -1,19 +1,26 @@
 <template>
   <div>
-    <main>
-      <AppProduct v-for="(item,index) in products"
+    <div id="shop-list">
+      <AppProduct 
+      v-for="(item,index) in products"
       :key="index"
       :productObj="item"/>
+    </div>
+
+    <main>
+      <AppJumbotrom />
     </main>
   </div>
 </template>
 
 <script>
 import AppProduct from "../components/AppProduct.vue";
+import AppJumbotrom from "../components/AppJumbotrom.vue";
 export default {
   name: "AppMain",
   components: {
     AppProduct,
+    AppJumbotrom
   },
   data() {
       return {
@@ -103,12 +110,19 @@ export default {
 
 <style scoped lang="scss">
 @import "../style/common.scss";
-main {
-  display: flex;
+#shop-list {
+  display: none; //Debug
+  //display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   max-width: 80%;
   margin: 0 auto;
   margin-top: 30px
+}
+main { 
+   background-color: $secondary-color;
+   background-image: url(../assets/img/bg-transparent-3.png);
+   background-size: unset;
+   height: 100vh;
 }
 </style>

@@ -20,6 +20,9 @@ export default {
   methods: {
     search(searchKey) {
       console.log(searchKey);
+      return  {
+        searchKey
+      };
     }
   }
 }
