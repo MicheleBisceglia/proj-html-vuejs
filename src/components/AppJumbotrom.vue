@@ -67,6 +67,8 @@ export default {
   align-items: center;
   margin-top: 15%;
   color: white;
+  background-color: $secondary-color;
+  background-image: url(../assets/img/bg-transparent-3.png);
   img {
     height: 100px;
     margin-right: 20px;

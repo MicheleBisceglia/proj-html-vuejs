@@ -8,7 +8,15 @@
     </div>
 
     <main>
-      <AppJumbotrom />
+      <div class="jumbotrom-container">
+        <AppJumbotrom />  
+      </div>
+
+      <FirstSection />
+
+      <SecondSection />
+
+      <ThirdSection />
     </main>
   </div>
 </template>
@@ -16,11 +24,17 @@
 <script>
 import AppProduct from "../components/AppProduct.vue";
 import AppJumbotrom from "../components/AppJumbotrom.vue";
+import FirstSection from "../components/FirstSection.vue";
+import SecondSection from "../components/SecondSection.vue";
+import ThirdSection from "../components/ThirdSection.vue";
 export default {
   name: "AppMain",
   components: {
     AppProduct,
-    AppJumbotrom
+    AppJumbotrom,
+    FirstSection,
+    SecondSection,
+    ThirdSection
   },
   data() {
       return {
@@ -119,10 +133,10 @@ export default {
   margin: 0 auto;
   margin-top: 30px
 }
-main { 
-   background-color: $secondary-color;
-   background-image: url(../assets/img/bg-transparent-3.png);
-   background-size: unset;
-   height: 100vh;
+.jumbotrom-container { 
+  background-color: $secondary-color;
+  background-image: url(../assets/img/bg-transparent-3.png);
+  background-size: unset;
+  height: 100vh;
 }
 </style>
