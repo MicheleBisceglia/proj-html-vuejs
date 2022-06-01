@@ -19,6 +19,17 @@
         </div>
       </div>
     </div>
+    <div class="">
+      <div class="my_container pt-5">
+       <div class="container">
+         <div class="row">
+           <div class="col-6"></div>
+           <div class="col-6"></div>
+         </div>
+       </div>
+        
+      </div>
+    </div>
   </section>
 </template>
 
@@ -31,7 +42,7 @@ export default {
 <style lang="scss" scoped>
 @import "../style/common.scss";
   .bg-section {
-    height: 400px;
+    height: 350px;
     width: 100%;
     background-color: $secondary-color;
     background-image: url(../assets/img/bg-transparent-3.png);
@@ -40,4 +51,12 @@ export default {
     padding-top: 70px;
   }
   }
+.my_container {
+  width: 80%;
+  height: 80%;
+  margin: 0 auto;
+  background-image: url(../assets/img/banner-7-2x-scaled.jpg);
+ 
+
+}
 </style>

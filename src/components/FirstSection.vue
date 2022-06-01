@@ -64,6 +64,7 @@ export default {
 @import "../style/common.scss";
 .shop-category {
   width: 100%;
+  padding-top: 120px;
 } 
 .col-bg {
   background-color: $secondary-color;

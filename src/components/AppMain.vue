@@ -138,5 +138,6 @@ export default {
   background-image: url(../assets/img/bg-transparent-3.png);
   background-size: unset;
   height: 100vh;
+  padding-top: 120px;
 }
 </style>
