@@ -19,15 +19,14 @@
         </div>
       </div>
     </div>
-    <div class="">
+    <div>
       <div class="my_container pt-5">
        <div class="container">
          <div class="row">
-           <div class="col-6"></div>
+           <div class="col-6">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur error quidem praesentium quibusdam quo quae, veniam aliquid ad magni ducimus laboriosam voluptatum quisquam blanditiis nam, explicabo necessitatibus ex porro nostrum.</div>
            <div class="col-6"></div>
          </div>
        </div>
-        
       </div>
     </div>
   </section>
@@ -46,16 +45,19 @@ export default {
     width: 100%;
     background-color: $secondary-color;
     background-image: url(../assets/img/bg-transparent-3.png);
+    padding-bottom: 37%;
   .my_title {
     color: white;
     padding-top: 70px;
   }
   }
 .my_container {
-  width: 80%;
-  height: 80%;
+  width: 90%;
+  height: 400px;
   margin: 0 auto;
+  margin-top: 50px;
   background-image: url(../assets/img/banner-7-2x-scaled.jpg);
+  background-size: cover;
  
 
 }

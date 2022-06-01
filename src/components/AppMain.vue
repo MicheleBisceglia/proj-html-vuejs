@@ -17,6 +17,10 @@
       <SecondSection />
 
       <ThirdSection />
+
+      <FourthSection />
+
+      <FifthSection />
     </main>
   </div>
 </template>
@@ -27,6 +31,8 @@ import AppJumbotrom from "../components/AppJumbotrom.vue";
 import FirstSection from "../components/FirstSection.vue";
 import SecondSection from "../components/SecondSection.vue";
 import ThirdSection from "../components/ThirdSection.vue";
+import FourthSection from "../components/FourthSection.vue";
+import FifthSection from "../components/FifthSection.vue";
 export default {
   name: "AppMain",
   components: {
@@ -34,7 +40,9 @@ export default {
     AppJumbotrom,
     FirstSection,
     SecondSection,
-    ThirdSection
+    ThirdSection,
+    FourthSection,
+    FifthSection,
   },
   data() {
       return {
