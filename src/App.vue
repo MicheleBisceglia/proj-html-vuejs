@@ -1,8 +1,16 @@
 <template>
   <div id="app">
+    <!-- Header -->
     <AppHeader @searchClick="search"/>
+    <!-- /Header -->
+
+    <!-- Main -->
     <AppMain />
+    <!-- /Main -->
+
+    <!-- Footer -->
     <AppFooter />
+    <!-- /Footer -->
   </div>
 </template>
 
@@ -36,4 +44,5 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 </style>

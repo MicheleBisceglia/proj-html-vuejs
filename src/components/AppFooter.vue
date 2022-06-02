@@ -3,130 +3,69 @@
     <footer class="text-center text-white">
   <!-- Grid container -->
   <div class="container pt-4">
-
-    <section class="footer_top pb-4">
+     <section class="footer_top pb-4">
     <div class="container text-center text-md-start mt-5">
-      <!-- Grid row -->
       <div class="row mt-3">
-        <!-- Grid column -->
         <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-          <!-- Content -->
-          <h6 class="text-uppercase fw-bold mb-4">
-            <i class="fas fa-gem me-3"></i>Company name
-          </h6>
-          <p>
-            Here you can use rows and columns to organize your footer content. Lorem ipsum
-            dolor sit amet, consectetur adipisicing elit.
-          </p>
-        </div>
-        <!-- Grid column -->
+          <div class="mb-4 mt-5">
+            <img src="../assets/img/mobile-light-pet-logo-2x-200x52.png" alt="logo">
+          </div>
+           <FooterInfo 
+            v-for="(item, index) in information"
+            :key="index"
+            :infoObj="item"/>
+      </div>
 
-        <!-- Grid column -->
         <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
           <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">
-            Products
+          <h6 class="mb-4 mt-5">
+            Shop by brand
           </h6>
-          <p>
-            <a href="#!" class="text-reset">Angular</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">React</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Vue</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Laravel</a>
-          </p>
+          <FooterList 
+            v-for="(item, index) in list1"
+            :key="index"
+            :footerListObj="item"/>
         </div>
-        <!-- Grid column -->
-
-        <!-- Grid column -->
+      
         <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-          <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">
+          <h6 class="second-font fw-bold mb-4 mt-5">
             Useful links
           </h6>
-          <p>
-            <a href="#!" class="text-reset">Pricing</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Settings</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Orders</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Help</a>
-          </p>
+          <FooterList2
+            v-for="(item, index) in list2"
+            :key="index"
+            :footerListObj="item"/>
         </div>
-        <!-- Grid column -->
-
-        <!-- Grid column -->
-        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-          <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">
-            Contact
-          </h6>
-          <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
-          <p>
-            <i class="fas fa-envelope me-3"></i>
-            info@example.com
-          </p>
-          <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
-          <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 bg-container">
+          <div>
+            <h5 class="second-font mt-5 mb-3">Subscrime to our newsletter</h5>
+            <div>
+              <input class="w-100 p-2 mb-2" type="text" placeholder="insert your email ...*">
+            </div>
+            <div>
+              <button class="w-100 btn btn-success rounded-pill mb-1 p-2">Subscibe</button>
+            </div>
+          </div>
         </div>
-        <!-- Grid column -->
       </div>
-      <!-- Grid row -->
     </div>
   </section>
-  <!-- Section: Links  -->
 
     <!-- Section: Social media -->
     <section class="mb-5 mt-5">
       <ul class="footer_list mb-4">
-        <li>Home</li>
-        <li>Contact</li>
-        <li>Blog</li>
-        <li>Contact</li>
-        <li>Shop</li>
+        <FooterMenu 
+          v-for="(item, index) in footerMenu"
+          :key="index"
+          :footerListObj="item"/>
       </ul>
       <!-- Facebook -->
-      <a
-        class="btn btn-link btn-floating btn-lg text-dark m-1"
-        href="#!"
-        role="button"
-        data-mdb-ripple-color="dark"
-        ><i class="fab fa-facebook-f"></i
-      ></a>
-
-      <!-- Twitter -->
-      <a
-        class="btn btn-link btn-floating btn-lg text-dark m-1"
-        href="#!"
-        role="button"
-        data-mdb-ripple-color="dark"
-        ><i class="fab fa-twitter"></i
-      ></a>
-
-      <!-- Instagram -->
-      <a
-        class="btn btn-link btn-floating btn-lg text-dark m-1"
-        href="#!"
-        role="button"
-        data-mdb-ripple-color="dark"
-        ><i class="fab fa-instagram"></i
-      ></a>
-
-      <!-- youtube -->
-      <a
-        class="btn btn-link btn-floating btn-lg text-dark m-1"
-        href="#!"
-        role="button"
-        data-mdb-ripple-color="dark"
-        ><i class="fab fa-youtube"></i></a>
+      
+        <FooterIcon
+        v-for="(item, index) in icons"
+          :key="index"
+          :footerListObj="item"/>
+     
     </section>
     <!-- Section: Social media -->
   </div>
@@ -134,8 +73,7 @@
 
    <!-- Copyright -->
   <div class="footer_btm text-center p-3">
-    © 2020 Copyright:
-    <a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+      © Copyright 2012 - 2022 | Avada Theme by ThemeFusion | All Rights Reserved | Powered by WordPress
   </div>
   <!-- Copyright -->
 </footer>
@@ -143,8 +81,107 @@
 </template>
 
 <script>
+import FooterInfo from "../components/FooterInfo.vue";
+import FooterList from "../components/FooterList.vue";
+import FooterList2 from "../components/FooterList2.vue";
+import FooterMenu from "../components/FooterMenu.vue";
+import FooterIcon from "../components/FooterIcon.vue"
 export default {
   name: "AppFooter",
+  components: {
+   FooterInfo,
+   FooterList,
+   FooterList2,
+   FooterMenu,
+   FooterIcon
+  },
+  data() {
+    return {
+      props: {
+      infoObj: Object,
+      footerListObj: Object,
+    },
+    //Lista informazioni footer
+      information: [
+        {
+          info: "1234 Avada Avenue Avadaville",
+        },
+        { 
+          info: "info@your-company.com",
+        },
+        {
+          info: "Call us: (1) 234 5678"
+        }
+      ],
+
+      //Lista footer 1
+      list1: [
+        {
+          item: "Bed",
+        },
+        {
+          item: "Food",
+        },
+        {
+          item: "Toys",
+        },
+        {
+          item: "Transort",
+        },
+      ],
+
+      //Lista footer 2
+      list2: [
+        {
+          item: "My account",
+        },
+        {
+          item: "Orders",
+        },
+        {
+          item: "Checkout",
+        },
+        {
+          item: "Cart",
+        },
+      ],
+
+      //menu footer
+      footerMenu: [
+        {
+          item: "Home",
+        },
+        {
+          item: "About",
+        },
+        {
+          item: "Blog",
+        },
+        {
+          item: "Contact",
+        },
+        {
+          item: "Shop"
+        }
+      ],
+
+      //social footer
+      icons: [
+        {
+          item: "fab fa-facebook-f"
+        },
+        {
+          item: "fab fa-twitter"
+        },
+        {
+          item: "fab fa-instagram"
+        },
+        {
+          item: "fab fa-youtube"
+        },
+      ]
+    };
+  },
 };
 </script>
 
@@ -169,5 +206,16 @@ footer {
 }
 i {
   color:white
+}
+.bg-container {
+  background-image: url(../assets/img/bg-transparent-3.png);
+  background-size: cover;
+  border: 1px solid $light-color;
+  border-radius: 10px;
+}
+input {
+  background-color: $light-color;
+  border-style: none;
+  border-radius: 20px;
 }
 </style>

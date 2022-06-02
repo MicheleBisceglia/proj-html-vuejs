@@ -1,21 +1,23 @@
 <template>
   <section>
+    <!-- new arrivals banner -->
     <div class="container bg-section">
       <div class="row justyfy-content-center">
         <div class="offset-4 col-4 text-center">
-          <p>FIND THE BEST ANIMAL SUPPLIES</p>
-          <h2>New arrivals Weekly</h2>
+          <p class="second-font">FIND THE BEST ANIMAL SUPPLIES</p>
+          <h2 class="second-font">New arrivals Weekly</h2>
           <button class="btn btn-light rounded-pill">Learn more about us</button>
         </div>
       </div>
     </div>
+    <!-- new arrivals banner -->
     
     <div class="container">
-      
+    <!-- items everyone section -->
       <div class="row">
         <div class="col-6">
           <p class="pt-5">All-time sellers</p>
-          <h3>Items evryone loves</h3>
+          <h3 class="second-font">Items everyone loves</h3>
         </div>
         <div class="col-6 text-end">
           <button class="btn btn-success rounded-pill mt-5">View all products</button>
@@ -40,6 +42,7 @@
           <p class="text-center pt-3 pb-5">Colorful cat leash</p>
         </div>
       </div>
+    <!-- /items everyone section -->
     </div>
   </section>
 </template>

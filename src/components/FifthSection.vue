@@ -1,7 +1,7 @@
 <template>
   <section class="shop-category text-center mt-5 mb-5">
-    <h3 class="text-center pt-5">Browse by category</h3>
-    <p class="w-50 mx-auto pb-5">Augue purus et, tincidunt condimentum mauris. At nibh rutrum mi in. Nisi, vitae interdum eleifend dui, consequat nulla rhoncus dictum. Viverra.</p>
+    <h2 class="text-center pt-5">New products arrival</h2>
+    <p class="w-50 mx-auto pb-5">Latest products</p>
     <div class="container">
       <div class="row">
         <div class="col-4">

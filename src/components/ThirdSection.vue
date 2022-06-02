@@ -1,7 +1,7 @@
 <template>
   <section class="bg-section">
     <div class="my_title">
-      <h3 class="text-center">Users Testimonials</h3>
+      <h3 class="text-center second-font">Users Testimonials</h3>
     </div>
     <div class="container">
       <div class="row">
@@ -20,11 +20,18 @@
       </div>
     </div>
     <div>
-      <div class="my_container pt-5">
+      <div class="my_container">
        <div class="container">
          <div class="row">
-           <div class="col-6">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur error quidem praesentium quibusdam quo quae, veniam aliquid ad magni ducimus laboriosam voluptatum quisquam blanditiis nam, explicabo necessitatibus ex porro nostrum.</div>
-           <div class="col-6"></div>
+           <div class="col-6">
+             <h2 class="p-4 mt-5 second-font">Join our newsletter</h2>
+             <p class="px-4">Volutpat vel turpis nulla lorem sed semper. Aliquam sagittis sem libero viverra vehicula nullam ut nisl.</p>
+             <div class="m-4">
+               <input type="text"
+                placeholder="Search...">
+                <button class="btn btn-success rounded-pill mx-3">View all products</button>
+             </div>
+           </div>
          </div>
        </div>
       </div>
@@ -40,16 +47,16 @@ export default {
 
 <style lang="scss" scoped>
 @import "../style/common.scss";
-  .bg-section {
-    height: 350px;
-    width: 100%;
-    background-color: $secondary-color;
-    background-image: url(../assets/img/bg-transparent-3.png);
-    padding-bottom: 37%;
+.bg-section {
+  height: 350px;
+  width: 100%;
+  background-color: $secondary-color;
+  background-image: url(../assets/img/bg-transparent-3.png);
+  padding-bottom: 40%;
   .my_title {
     color: white;
     padding-top: 70px;
-  }
+    }
   }
 .my_container {
   width: 90%;
@@ -58,7 +65,12 @@ export default {
   margin-top: 50px;
   background-image: url(../assets/img/banner-7-2x-scaled.jpg);
   background-size: cover;
- 
-
+}
+input {
+  background-color: $light-color;
+  border-style: none;
+  border-radius: 50px;
+  padding: 0.5rem;
+  width: 250px;
 }
 </style>

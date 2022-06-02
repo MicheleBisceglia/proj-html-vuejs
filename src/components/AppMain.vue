@@ -12,7 +12,7 @@
         <AppJumbotrom />  
       </div>
 
-      <FirstSection />
+      <FirstSection class="pb-5"/>
 
       <SecondSection />
 

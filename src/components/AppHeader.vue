@@ -2,14 +2,12 @@
   <div>
     <header>
       <div class="header_top pt-3 pb-3">
-        
+
         <HeaderItem 
         v-for="(item, index) in headerItem"
         :key="index"
         :itemObj="item"/>
         
-            
-          
       </div>
       <div class="header_btm size_60">
         <HeaderList 
@@ -35,12 +33,15 @@ export default {
       props: {
       listObj: Object
     },
+    //logo e contact in header
       headerItem: [
         {
           logo: "dark-pet-logo.png",
           contact: "1.8000.123.4567",
         },
       ],
+
+      //header menu list
       headerList: [
         {
           list: "Home",
